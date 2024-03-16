@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Overpass", sans-serif;
+}
+
+
+:root {
+  --Orange: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: hsl(216, 12%, 54%);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+
+body {
+  background-color: var(--Very-Dark-Blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card {
+  width: 400px;
+  background-color: var(--Dark-Blue);
+  padding: 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+@media (max-width: 450px) {
+  .card {
+    width: 90%;
+  }
+}
+.card img {
+  color: var(--Orange);
+  background-color: hsl(216deg 12% 8% / 23%);
+  border-radius: 50%;
+  padding: 10px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.card h2 {
+  color: var(--White);
+  margin: 10px 0;
+  font-weight: 700;
+}
+.card p {
+  font-size: 18px;
+  color: var(--Medium-Grey);
+  margin-bottom: 20px;
+}
+.card ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.card ul li {
+    background: hsl(212deg 19% 15%);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--Medium-Grey);
+    cursor: pointer;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.card ul li:hover {
+  background-color: var(--Orange);
+  color: white;
+}
+.card button {
+  width: 100%;
+  background: var(--Orange);
+  color: var(--White);
+  font-weight: 700;
+  border: none;
+  padding: 11px;
+  border-radius: 30px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.card button:hover {
+  background-color: var(--White);
+  color: var(--Orange);
+}
+
+.st {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+img.str {
+  background-color: transparent;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+
+p.tr {
+  margin: 10px 0;
+  color: var(--Orange);
+  background: hsl(216deg 12% 8% / 58%);
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+p.text {
+  text-align: center;
+}
